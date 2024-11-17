@@ -1,8 +1,6 @@
 <template>
   <p ref="typingElement" class=" mt-4 max-w-xs leading-normal">
-    <!-- Typed text will display here -->
     <span>{{ displayedText }}</span>
-    <!-- Blinking cursor that disappears after typing is complete -->
     <span v-if="showCursor" class="ml-1 w-[2px] h-[1em] bg-current animate-blink inline-block"></span>
   </p>
 </template>
