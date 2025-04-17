@@ -1,33 +1,33 @@
-name: Vercel Preview Deployment
+# name: Vercel Preview Deployment
 
-env:
-  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+# env:
+#   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+#   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
-on:
-  push:
-    branches-ignore:
-      - main
+# on:
+#   push:
+#     branches-ignore:
+#       - main
 
-jobs:
-  Deploy-Preview:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+# jobs:
+#   Deploy-Preview:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
 
-      - name: Install Yarn
-        run: npm install --global yarn
+#       - name: Install Yarn
+#         run: npm install --global yarn
 
-      - name: Install Dependencies
-        run: yarn install
+#       - name: Install Dependencies
+#         run: yarn install
       
-      - name: Install Vercel CLI
-        run: yarn global add vercel
+#       - name: Install Vercel CLI
+#         run: yarn global add vercel
 
-      - name: Deploy to Vercel (Preview)
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: vercel --token=${{ secrets.VERCEL_TOKEN }}
+#       - name: Deploy to Vercel (Preview)
+#         env:
+#           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+#           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+#           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+#         run: vercel --token=${{ secrets.VERCEL_TOKEN }}
         
