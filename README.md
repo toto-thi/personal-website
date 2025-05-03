@@ -2,7 +2,7 @@
 
 V1.
 
-My first personal website, I think it's a good start for me even though the UX/UI is not designed by me I can still make it work (almost) in a different tech stack!! Hopefully there will be an update soon in the future.
+My first personal website, I think it's a good start for me, even though the UX/UI is not designed by me, I can still make it work (almost) in a different tech stack!! Hopefully, there will be an update soon.
 
 ## Getting started
 
@@ -21,4 +21,4 @@ Feel free to edit the template in `content` and `components/sections`
 
 ## Deployment
 
-I have deployed this website private version to Vercal, you can learn more how to deploy it via [Vercel](https://vercel.com/docs/deployments)
+I have deployed this website's private version to Vercel, you can learn more about how to deploy it via [Vercel](https://vercel.com/docs/deployments)
